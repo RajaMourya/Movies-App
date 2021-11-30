@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    color:rgb(173, 255, 255);
+    text-shadow: 1px 1px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#formid{
+    text-align: center;
+}
+
+body {
+    margin: 0%;
+    min-height: 100vh;
+    background-color: #00162A;
+    overflow: auto;
+}
+  
+.btn {
+    color: #fff;
+    background-color:#495057 ;
+    outline: none;
+    min-height: 38px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    width: 300px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    outline: none;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.movies-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+.card{
+    display: flex;
+    padding: 2%;
+    justify-content: start;
+    flex-direction: column;
+    width: 18%;
+    
+}
+
+.card:hover{
+    transform: scale(1.2); 
+}
+
+.poster{
+    height: 180px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.details{
+    line-height: 0;
+    background-color:#3568;
+    color: cornsilk;
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.add-favourite{
+    background-color: black;
+    
+ padding: 5px;
+ color: whitesmoke;
+ border-bottom-left-radius: 10px;
+ border-bottom-right-radius: 10px;
+ outline: none;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.add-favourite:hover{
+    
+    background-color: #495057;
+}
+
+.desc{
+    display:none;
+    padding: 15px;
+    position:fixed;
+    top:2%;
+    right: 0%;
+    border-radius: 20px;
+    background-color:#00162A;
+    color: white;
+    font-style:italic;
+    border-radius: 30px;
+    border: 2px dotted white ;
+}
+
+@media screen and (max-width: 750px) {
+    .card{
+        width: 40%;
+      
+    }
+  }
+@media screen and (max-width: 480px) {
+    .card{
+        width: 75%;
+      
+    }
+  }
